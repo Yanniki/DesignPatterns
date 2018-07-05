@@ -1,5 +1,5 @@
 //
-//  JSONParser.swift
+//  Parser.swift
 //  Design Patterns
 //
 //  Created by Ioannis Pasmatzis on 2/7/18.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol Parser {
+    func parse<T: Codable>(data: Data) -> T?
+}

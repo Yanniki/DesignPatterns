@@ -1,5 +1,5 @@
 //
-//  ParsingStrategy.swift
+//  Storage.swift
 //  Design Patterns
 //
 //  Created by Ioannis Pasmatzis on 2/7/18.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Parser {
-    func parse<T>(data: Data) -> T?
+protocol Storage {
+    func save<T: Codable>(_ object: T)
 }

@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0E0382F520A8E73900DE62B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0382F420A8E73900DE62B6 /* AppDelegate.swift */; };
-		0E0382F720A8E73900DE62B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0382F620A8E73900DE62B6 /* ViewController.swift */; };
+		0E0382F720A8E73900DE62B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0382F620A8E73900DE62B6 /* MainViewController.swift */; };
 		0E0382FA20A8E73900DE62B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382F820A8E73900DE62B6 /* Main.storyboard */; };
 		0E0382FC20A8E73C00DE62B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FB20A8E73C00DE62B6 /* Assets.xcassets */; };
 		0E0382FF20A8E73C00DE62B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FD20A8E73C00DE62B6 /* LaunchScreen.storyboard */; };
 		0E03830A20A8E73D00DE62B6 /* Design_PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */; };
+		0EB26D2220EEAF97003AD1DE /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */; };
+		0EB26D2720EEB02B003AD1DE /* StrategyPatternHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */; };
+		0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2820EEB301003AD1DE /* TestObject.swift */; };
+		0EB26D2B20EEB696003AD1DE /* StrategyPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */; };
+		0EB26D2E20EEB832003AD1DE /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2D20EEB832003AD1DE /* MainDataSource.swift */; };
+		0EB26D3020EEB848003AD1DE /* DesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2F20EEB848003AD1DE /* DesignPattern.swift */; };
+		0EE1CB2220EAD2AC00E51ECF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1CB2120EAD2AC00E51ECF /* Parser.swift */; };
+		0EE1CB2420EAD45600E51ECF /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1CB2320EAD45600E51ECF /* JSONParser.swift */; };
+		0EE1CB2620EAD4DD00E51ECF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1CB2520EAD4DD00E51ECF /* Storage.swift */; };
+		0EE1CB2820EAD51100E51ECF /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1CB2720EAD51100E51ECF /* UserDefaultsStorage.swift */; };
 		0EEEDA4720C7399B00862E3D /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEEDA4620C7399B00862E3D /* Requester.swift */; };
 		0EEEDA4920C73A4D00862E3D /* AlamofireRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEEDA4820C73A4D00862E3D /* AlamofireRequester.swift */; };
 		0EFB907ADC6528E8CF4EBB4B /* Pods_Design_PatternsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089B0ED842C8784D46BC6ABC /* Pods_Design_PatternsTests.framework */; };
@@ -33,7 +43,7 @@
 		089B0ED842C8784D46BC6ABC /* Pods_Design_PatternsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Design_PatternsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0382F120A8E73900DE62B6 /* Design Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0382F420A8E73900DE62B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E0382F620A8E73900DE62B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E0382F620A8E73900DE62B6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0E0382F920A8E73900DE62B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E0382FB20A8E73C00DE62B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E0382FE20A8E73C00DE62B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +51,16 @@
 		0E03830520A8E73D00DE62B6 /* Design PatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Design PatternsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design_PatternsTests.swift; sourceTree = "<group>"; };
 		0E03830B20A8E73D00DE62B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternHandler.swift; sourceTree = "<group>"; };
+		0EB26D2820EEB301003AD1DE /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternViewController.swift; sourceTree = "<group>"; };
+		0EB26D2D20EEB832003AD1DE /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		0EB26D2F20EEB848003AD1DE /* DesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPattern.swift; sourceTree = "<group>"; };
+		0EE1CB2120EAD2AC00E51ECF /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		0EE1CB2320EAD45600E51ECF /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		0EE1CB2520EAD4DD00E51ECF /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		0EE1CB2720EAD51100E51ECF /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
 		0EEEDA4620C7399B00862E3D /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		0EEEDA4820C73A4D00862E3D /* AlamofireRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequester.swift; sourceTree = "<group>"; };
 		0FCFC065E0399EB4822AF683 /* Pods-Design PatternsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design PatternsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Design PatternsTests/Pods-Design PatternsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,8 +131,8 @@
 		0E03831420A8E75100DE62B6 /* Xcode Stuff */ = {
 			isa = PBXGroup;
 			children = (
+				0EB26D2C20EEB821003AD1DE /* Main Scene */,
 				0E0382F420A8E73900DE62B6 /* AppDelegate.swift */,
-				0E0382F620A8E73900DE62B6 /* ViewController.swift */,
 				0E0382F820A8E73900DE62B6 /* Main.storyboard */,
 				0E0382FB20A8E73C00DE62B6 /* Assets.xcassets */,
 				0E0382FD20A8E73C00DE62B6 /* LaunchScreen.storyboard */,
@@ -121,11 +141,53 @@
 			path = "Xcode Stuff";
 			sourceTree = "<group>";
 		};
-		0EE9722F20BB61C0005E5B5C /* Strategy Pattern */ = {
+		0EB26D2320EEAFC5003AD1DE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1CB2520EAD4DD00E51ECF /* Storage.swift */,
+				0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */,
+				0EE1CB2720EAD51100E51ECF /* UserDefaultsStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0EB26D2420EEAFD4003AD1DE /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				0EE1CB2120EAD2AC00E51ECF /* Parser.swift */,
+				0EE1CB2320EAD45600E51ECF /* JSONParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		0EB26D2520EEAFE1003AD1DE /* Requester */ = {
 			isa = PBXGroup;
 			children = (
 				0EEEDA4620C7399B00862E3D /* Requester.swift */,
 				0EEEDA4820C73A4D00862E3D /* AlamofireRequester.swift */,
+			);
+			path = Requester;
+			sourceTree = "<group>";
+		};
+		0EB26D2C20EEB821003AD1DE /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0EB26D2F20EEB848003AD1DE /* DesignPattern.swift */,
+				0E0382F620A8E73900DE62B6 /* MainViewController.swift */,
+				0EB26D2D20EEB832003AD1DE /* MainDataSource.swift */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		0EE9722F20BB61C0005E5B5C /* Strategy Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				0EB26D2420EEAFD4003AD1DE /* Parser */,
+				0EB26D2520EEAFE1003AD1DE /* Requester */,
+				0EB26D2320EEAFC5003AD1DE /* Storage */,
+				0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */,
+				0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */,
+				0EB26D2820EEB301003AD1DE /* TestObject.swift */,
 			);
 			path = "Strategy Pattern";
 			sourceTree = "<group>";
@@ -161,7 +223,6 @@
 				0E0382ED20A8E73900DE62B6 /* Sources */,
 				0E0382EE20A8E73900DE62B6 /* Frameworks */,
 				0E0382EF20A8E73900DE62B6 /* Resources */,
-				925A7DA0C50A6CC24E895A3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,24 +347,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		925A7DA0C50A6CC24E895A3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Design Patterns/Pods-Design Patterns-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Design Patterns/Pods-Design Patterns-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,9 +354,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0382F720A8E73900DE62B6 /* ViewController.swift in Sources */,
+				0EB26D2E20EEB832003AD1DE /* MainDataSource.swift in Sources */,
+				0EB26D2720EEB02B003AD1DE /* StrategyPatternHandler.swift in Sources */,
+				0EE1CB2820EAD51100E51ECF /* UserDefaultsStorage.swift in Sources */,
+				0EE1CB2220EAD2AC00E51ECF /* Parser.swift in Sources */,
+				0EE1CB2620EAD4DD00E51ECF /* Storage.swift in Sources */,
+				0EB26D2220EEAF97003AD1DE /* CoreDataStorage.swift in Sources */,
+				0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */,
+				0E0382F720A8E73900DE62B6 /* MainViewController.swift in Sources */,
+				0EB26D3020EEB848003AD1DE /* DesignPattern.swift in Sources */,
+				0EE1CB2420EAD45600E51ECF /* JSONParser.swift in Sources */,
 				0E0382F520A8E73900DE62B6 /* AppDelegate.swift in Sources */,
 				0EEEDA4720C7399B00862E3D /* Requester.swift in Sources */,
+				0EB26D2B20EEB696003AD1DE /* StrategyPatternViewController.swift in Sources */,
 				0EEEDA4920C73A4D00862E3D /* AlamofireRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

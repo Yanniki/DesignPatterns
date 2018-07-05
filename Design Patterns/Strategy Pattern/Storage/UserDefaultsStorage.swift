@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class UserDefaultsStorage: Storage {
+    func save<T>(_ object: T) where T: Codable {
+        debugPrint("saved object with user defaults")
+    }
+}
