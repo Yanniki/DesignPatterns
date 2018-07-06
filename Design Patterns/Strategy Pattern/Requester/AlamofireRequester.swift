@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import Alamofire
 
 class AlamofireRequester: Requester {
     func getData(from url: URL, completion: @escaping (Data?, Error?) -> Void) {
         debugPrint("making request with alamofire")
         
-        let emptyData = Data()
-        completion(emptyData, nil)
+        Alamofire.request(url).response(completionHandler: { dataResponse in
+                completion(dataResponse.data, dataResponse.error)
+        })
+        
     }
 }

@@ -10,7 +10,13 @@ import Foundation
 
 class StrategyPatternHandler {
     
-    func performStrategyPatternTest(with request: Requester, parser: Parser, storage: Storage) {
+    private let requester: Requester
+    
+    init(with requester: Requester) {
+        self.requester = requester
+    }
+    
+    func performStrategyPatternTest(with url: URL, parser: Parser, storage: Storage) {
         
         guard let testUrl = URL(string: "TEST URL") else { return }
         
@@ -23,6 +29,6 @@ class StrategyPatternHandler {
             storage.save(parsedObject)
         }
         
-        request.getData(from: testUrl, completion: completion)
+        requester.getData(from: testUrl, completion: completion)
     }
 }
