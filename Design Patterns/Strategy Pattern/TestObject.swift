@@ -8,4 +8,9 @@
 
 import Foundation
 
-class TestObject: Codable {}
+struct TestObject: Codable {
+    let name: String
+    let age: Int
+    let favoriteComicBook: String
+    let favoriteGame: String
+}

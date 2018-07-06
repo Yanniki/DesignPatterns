@@ -14,8 +14,19 @@
 		0E0382FF20A8E73C00DE62B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FD20A8E73C00DE62B6 /* LaunchScreen.storyboard */; };
 		0E03830A20A8E73D00DE62B6 /* Design_PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */; };
 		0E85FECE20EFE10E002816F1 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FECD20EFE10E002816F1 /* XMLParser.swift */; };
-		0EB26D2220EEAF97003AD1DE /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */; };
-		0EB26D2720EEB02B003AD1DE /* StrategyPatternHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */; };
+		0E85FEE220EFF24A002816F1 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */; };
+		0E85FEE320EFF24A002816F1 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED620EFF249002816F1 /* EncodingErrorExtension.swift */; };
+		0E85FEE420EFF24A002816F1 /* XMLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED720EFF249002816F1 /* XMLEncoder.swift */; };
+		0E85FEE520EFF24A002816F1 /* XMLEncodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED820EFF249002816F1 /* XMLEncodingStorage.swift */; };
+		0E85FEE620EFF24A002816F1 /* XMLKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED920EFF249002816F1 /* XMLKey.swift */; };
+		0E85FEE720EFF24A002816F1 /* XMLStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEDA20EFF24A002816F1 /* XMLStackParser.swift */; };
+		0E85FEE820EFF24A002816F1 /* ISO8601DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEDB20EFF24A002816F1 /* ISO8601DateFormatter.swift */; };
+		0E85FEE920EFF24A002816F1 /* DecodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEDD20EFF24A002816F1 /* DecodingErrorExtension.swift */; };
+		0E85FEEA20EFF24A002816F1 /* XMLUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEDE20EFF24A002816F1 /* XMLUnkeyedDecodingContainer.swift */; };
+		0E85FEEB20EFF24A002816F1 /* XMLKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEDF20EFF24A002816F1 /* XMLKeyedDecodingContainer.swift */; };
+		0E85FEEC20EFF24A002816F1 /* XMLDecodingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEE020EFF24A002816F1 /* XMLDecodingStorage.swift */; };
+		0E85FEED20EFF24A002816F1 /* XMLDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEE120EFF24A002816F1 /* XMLDecoder.swift */; };
+		0E85FEEF20EFF4B6002816F1 /* StrategyPatternHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FEEE20EFF4B6002816F1 /* StrategyPatternHandler.swift */; };
 		0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2820EEB301003AD1DE /* TestObject.swift */; };
 		0EB26D2B20EEB696003AD1DE /* StrategyPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */; };
 		0EB26D2E20EEB832003AD1DE /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB26D2D20EEB832003AD1DE /* MainDataSource.swift */; };
@@ -54,8 +65,19 @@
 		0E03830B20A8E73D00DE62B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E85FECD20EFE10E002816F1 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		0E85FECF20EFE657002816F1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
-		0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternHandler.swift; sourceTree = "<group>"; };
+		0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
+		0E85FED620EFF249002816F1 /* EncodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingErrorExtension.swift; sourceTree = "<group>"; };
+		0E85FED720EFF249002816F1 /* XMLEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncoder.swift; sourceTree = "<group>"; };
+		0E85FED820EFF249002816F1 /* XMLEncodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLEncodingStorage.swift; sourceTree = "<group>"; };
+		0E85FED920EFF249002816F1 /* XMLKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKey.swift; sourceTree = "<group>"; };
+		0E85FEDA20EFF24A002816F1 /* XMLStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLStackParser.swift; sourceTree = "<group>"; };
+		0E85FEDB20EFF24A002816F1 /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateFormatter.swift; sourceTree = "<group>"; };
+		0E85FEDD20EFF24A002816F1 /* DecodingErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingErrorExtension.swift; sourceTree = "<group>"; };
+		0E85FEDE20EFF24A002816F1 /* XMLUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		0E85FEDF20EFF24A002816F1 /* XMLKeyedDecodingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		0E85FEE020EFF24A002816F1 /* XMLDecodingStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecodingStorage.swift; sourceTree = "<group>"; };
+		0E85FEE120EFF24A002816F1 /* XMLDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDecoder.swift; sourceTree = "<group>"; };
+		0E85FEEE20EFF4B6002816F1 /* StrategyPatternHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrategyPatternHandler.swift; sourceTree = "<group>"; };
 		0EB26D2820EEB301003AD1DE /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 		0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternViewController.swift; sourceTree = "<group>"; };
 		0EB26D2D20EEB832003AD1DE /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
@@ -96,6 +118,7 @@
 		0E0382E820A8E73900DE62B6 = {
 			isa = PBXGroup;
 			children = (
+				0E85FED220EFF21D002816F1 /* 3rd Party */,
 				0E03831420A8E75100DE62B6 /* Xcode Stuff */,
 				0E0382F320A8E73900DE62B6 /* Design Patterns */,
 				0E03830820A8E73D00DE62B6 /* Design PatternsTests */,
@@ -145,11 +168,53 @@
 			path = "Xcode Stuff";
 			sourceTree = "<group>";
 		};
+		0E85FED220EFF21D002816F1 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				0E85FED320EFF223002816F1 /* XMLParsing */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		0E85FED320EFF223002816F1 /* XMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				0E85FEDC20EFF24A002816F1 /* Decoder */,
+				0E85FED420EFF249002816F1 /* Encoder */,
+				0E85FEDB20EFF24A002816F1 /* ISO8601DateFormatter.swift */,
+				0E85FED920EFF249002816F1 /* XMLKey.swift */,
+				0E85FEDA20EFF24A002816F1 /* XMLStackParser.swift */,
+			);
+			path = XMLParsing;
+			sourceTree = "<group>";
+		};
+		0E85FED420EFF249002816F1 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */,
+				0E85FED620EFF249002816F1 /* EncodingErrorExtension.swift */,
+				0E85FED720EFF249002816F1 /* XMLEncoder.swift */,
+				0E85FED820EFF249002816F1 /* XMLEncodingStorage.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		0E85FEDC20EFF24A002816F1 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				0E85FEDD20EFF24A002816F1 /* DecodingErrorExtension.swift */,
+				0E85FEDE20EFF24A002816F1 /* XMLUnkeyedDecodingContainer.swift */,
+				0E85FEDF20EFF24A002816F1 /* XMLKeyedDecodingContainer.swift */,
+				0E85FEE020EFF24A002816F1 /* XMLDecodingStorage.swift */,
+				0E85FEE120EFF24A002816F1 /* XMLDecoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
 		0EB26D2320EEAFC5003AD1DE /* Storage */ = {
 			isa = PBXGroup;
 			children = (
 				0EE1CB2520EAD4DD00E51ECF /* Storage.swift */,
-				0EB26D2120EEAF97003AD1DE /* CoreDataStorage.swift */,
 				0EE1CB2720EAD51100E51ECF /* UserDefaultsStorage.swift */,
 			);
 			path = Storage;
@@ -190,7 +255,7 @@
 				0EB26D2420EEAFD4003AD1DE /* Parser */,
 				0EB26D2520EEAFE1003AD1DE /* Requester */,
 				0EB26D2320EEAFC5003AD1DE /* Storage */,
-				0EB26D2620EEB02B003AD1DE /* StrategyPatternHandler.swift */,
+				0E85FEEE20EFF4B6002816F1 /* StrategyPatternHandler.swift */,
 				0EB26D2A20EEB696003AD1DE /* StrategyPatternViewController.swift */,
 				0EB26D2820EEB301003AD1DE /* TestObject.swift */,
 			);
@@ -361,12 +426,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Design Patterns/Pods-Design Patterns-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/EasyXMLParser/EasyXMLParser.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyXMLParser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -380,21 +443,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E85FEE320EFF24A002816F1 /* EncodingErrorExtension.swift in Sources */,
+				0E85FEEB20EFF24A002816F1 /* XMLKeyedDecodingContainer.swift in Sources */,
 				0EB26D2E20EEB832003AD1DE /* MainDataSource.swift in Sources */,
-				0EB26D2720EEB02B003AD1DE /* StrategyPatternHandler.swift in Sources */,
+				0E85FEEC20EFF24A002816F1 /* XMLDecodingStorage.swift in Sources */,
+				0E85FEE820EFF24A002816F1 /* ISO8601DateFormatter.swift in Sources */,
 				0EE1CB2820EAD51100E51ECF /* UserDefaultsStorage.swift in Sources */,
+				0E85FEE420EFF24A002816F1 /* XMLEncoder.swift in Sources */,
 				0EE1CB2220EAD2AC00E51ECF /* Parser.swift in Sources */,
 				0EE1CB2620EAD4DD00E51ECF /* Storage.swift in Sources */,
-				0EB26D2220EEAF97003AD1DE /* CoreDataStorage.swift in Sources */,
+				0E85FEED20EFF24A002816F1 /* XMLDecoder.swift in Sources */,
+				0E85FEE520EFF24A002816F1 /* XMLEncodingStorage.swift in Sources */,
 				0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */,
 				0E0382F720A8E73900DE62B6 /* MainViewController.swift in Sources */,
 				0EB26D3020EEB848003AD1DE /* DesignPattern.swift in Sources */,
 				0EE1CB2420EAD45600E51ECF /* JSONParser.swift in Sources */,
+				0E85FEE720EFF24A002816F1 /* XMLStackParser.swift in Sources */,
 				0E0382F520A8E73900DE62B6 /* AppDelegate.swift in Sources */,
 				0EEEDA4720C7399B00862E3D /* Requester.swift in Sources */,
+				0E85FEE920EFF24A002816F1 /* DecodingErrorExtension.swift in Sources */,
 				0EB26D2B20EEB696003AD1DE /* StrategyPatternViewController.swift in Sources */,
 				0EEEDA4920C73A4D00862E3D /* AlamofireRequester.swift in Sources */,
+				0E85FEE620EFF24A002816F1 /* XMLKey.swift in Sources */,
+				0E85FEEF20EFF4B6002816F1 /* StrategyPatternHandler.swift in Sources */,
 				0E85FECE20EFE10E002816F1 /* XMLParser.swift in Sources */,
+				0E85FEEA20EFF24A002816F1 /* XMLUnkeyedDecodingContainer.swift in Sources */,
+				0E85FEE220EFF24A002816F1 /* XMLReferencingEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

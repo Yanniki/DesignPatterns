@@ -1,20 +1,16 @@
 PODS:
   - Alamofire (4.7.2)
-  - EasyXMLParser (1.1.1)
 
 DEPENDENCIES:
   - Alamofire
-  - EasyXMLParser
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
-    - EasyXMLParser
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  EasyXMLParser: f8eb5bb299fe8abdddd450d8b7f680ae00a5d538
 
-PODFILE CHECKSUM: 0723c6099da6a5287d87b875d9a907c1856d1d43
+PODFILE CHECKSUM: ace4c780871a7736f1f29e458bf1cc79517d02dd
 
 COCOAPODS: 1.5.0

@@ -7,13 +7,18 @@
 //
 
 import Foundation
-import EasyXMLParser
 
-class XMLParser: Parser {
+class YannikiXMLParser: Parser {
+    
+    private let decoder: XMLDecoder
+    
+    init(decoder: XMLDecoder = XMLDecoder()) {
+        self.decoder = decoder
+    }
     
     func parse<T>(data: Data) -> T? where T: Codable {
         print("oh wow. an iOS developer who's actually parsing from xml data. for \(T.self)")
         
-        return nil
+        return try? decoder.decode(T.self, from: data)
     }
 }

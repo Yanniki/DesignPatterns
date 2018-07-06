@@ -8,7 +8,7 @@ target 'Design Patterns' do
   # Pods for Design Patterns
 
     pod 'Alamofire'
-    pod 'EasyXMLParser'
+    
   target 'Design PatternsTests' do
     inherit! :search_paths
     # Pods for testing

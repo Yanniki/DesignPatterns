@@ -11,24 +11,27 @@ import Foundation
 class StrategyPatternHandler {
     
     private let requester: Requester
+    private let storage: Storage
     
-    init(with requester: Requester) {
+    init(with requester: Requester, storage: Storage) {
         self.requester = requester
+        self.storage = storage
     }
     
-    func performStrategyPatternTest(with url: URL, parser: Parser, storage: Storage) {
+    func performStrategyPatternTest(with url: URL, parser: Parser) {
         
-        guard let testUrl = URL(string: "TEST URL") else { return }
-        
-        let completion: (Data?, Error?) -> Void = { data, error in
+        let completion: (Data?, Error?) -> Void = { [weak self] data, error in
             
-            guard let data = data else { return }
+            guard let data = data else {
+                debugPrint(error.debugDescription)
+                return
+            }
             
             let parsedObject: TestObject? = parser.parse(data: data)
             
-            storage.save(parsedObject)
+            self?.storage.save(parsedObject)
         }
         
-        requester.getData(from: testUrl, completion: completion)
+        requester.getData(from: url, completion: completion)
     }
 }
