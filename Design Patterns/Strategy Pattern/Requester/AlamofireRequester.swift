@@ -16,6 +16,5 @@ class AlamofireRequester: Requester {
         Alamofire.request(url).response(completionHandler: { dataResponse in
                 completion(dataResponse.data, dataResponse.error)
         })
-        
     }
 }
