@@ -14,6 +14,7 @@
 		0E0382FF20A8E73C00DE62B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FD20A8E73C00DE62B6 /* LaunchScreen.storyboard */; };
 		0E03830A20A8E73D00DE62B6 /* Design_PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */; };
 		0E723B6620F252EA000BD563 /* CommonTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */; };
+		0E723B6820F256CD000BD563 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E723B6720F256CD000BD563 /* LoadingOverlay.swift */; };
 		0E85FECE20EFE10E002816F1 /* YannikiXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FECD20EFE10E002816F1 /* YannikiXMLParser.swift */; };
 		0E85FEE220EFF24A002816F1 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */; };
 		0E85FEE320EFF24A002816F1 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED620EFF249002816F1 /* EncodingErrorExtension.swift */; };
@@ -65,6 +66,7 @@
 		0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design_PatternsTests.swift; sourceTree = "<group>"; };
 		0E03830B20A8E73D00DE62B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypeAliases.swift; sourceTree = "<group>"; };
+		0E723B6720F256CD000BD563 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		0E85FECD20EFE10E002816F1 /* YannikiXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YannikiXMLParser.swift; sourceTree = "<group>"; };
 		0E85FECF20EFE657002816F1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */,
+				0E723B6720F256CD000BD563 /* LoadingOverlay.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -437,10 +440,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Design Patterns/Pods-Design Patterns-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/YanniWorks/YanniWorks.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YanniWorks.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -465,6 +470,7 @@
 				0EE1CB2620EAD4DD00E51ECF /* Storage.swift in Sources */,
 				0E85FEED20EFF24A002816F1 /* XMLDecoder.swift in Sources */,
 				0E85FEE520EFF24A002816F1 /* XMLEncodingStorage.swift in Sources */,
+				0E723B6820F256CD000BD563 /* LoadingOverlay.swift in Sources */,
 				0E723B6620F252EA000BD563 /* CommonTypeAliases.swift in Sources */,
 				0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */,
 				0E0382F720A8E73900DE62B6 /* MainViewController.swift in Sources */,
@@ -644,10 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CF5Y5SBGU;
 				INFOPLIST_FILE = "$(SRCROOT)/Xcode Stuff/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanniki.Design-Patterns";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -663,10 +666,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CF5Y5SBGU;
 				INFOPLIST_FILE = "$(SRCROOT)/Xcode Stuff/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanniki.Design-Patterns";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -683,11 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CF5Y5SBGU;
 				INFOPLIST_FILE = "Design PatternsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanniki.Design-PatternsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -705,11 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CF5Y5SBGU;
 				INFOPLIST_FILE = "Design PatternsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yanniki.Design-PatternsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

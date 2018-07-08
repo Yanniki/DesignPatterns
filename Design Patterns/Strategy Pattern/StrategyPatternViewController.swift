@@ -49,14 +49,18 @@ class StrategyPatternViewController: UIViewController {
     }
     
     private func executeStrategy(for testCase: TestCase) {
-        guard let url = testCase.url else {
-            assertionFailure("A valid url should be passed")
+        guard let url = testCase.url,
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            assertionFailure("A valid url should be passed or the delegate is the wrong class")
             return
         }
+        
+        appDelegate.fullScreenOverlay?.isHidden = false
         
         titleLabel.isHidden = true
         
         handler.performStrategyPatternTest(with: url, parser: buildParsingStrategy(for: testCase), completion: { [weak self] success in
+            appDelegate.fullScreenOverlay?.isHidden = true
             self?.titleLabel.isHidden = false
             self?.titleLabel.text = success ? "Succeeded to fetch test object for \(testCase.title) request type" : "Something went wrong, please try again"
         })

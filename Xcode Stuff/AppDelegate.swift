@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var fullScreenOverlay: LoadingOverlay? = {
+        guard let window = window else { return nil }
+        let overlay = LoadingOverlay(frame: window.bounds)
+        overlay.isHidden = true
+        window.addSubview(overlay)
+        return overlay
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
