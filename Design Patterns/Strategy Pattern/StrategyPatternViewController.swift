@@ -33,9 +33,7 @@ class StrategyPatternViewController: UIViewController {
     
     private lazy var handler: StrategyPatternHandler = {
         
-        /*  These can be moved to the builder function is different manners,
-            if you ever need to expand to supporting more solution.
-        */
+        //  These can be moved to the builder function if you ever need to expand to supporting more solutions.
         let requester: Requester = AlamofireRequester()
         let storage: Storage = UserDefaultsStorage()
         

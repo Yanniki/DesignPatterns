@@ -13,6 +13,9 @@ class StrategyPatternHandler {
     private let requester: Requester
     private let storage: Storage
     
+    /**
+        Injeactable Request and Storage solutions. 
+     */
     init(with requester: Requester, storage: Storage) {
         self.requester = requester
         self.storage = storage

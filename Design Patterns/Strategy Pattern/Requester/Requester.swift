@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+    Protocol for different web request implementations (Alamofire, URLSession, etc)
+ */
 protocol Requester {
     func getData(from url: URL, completion: @escaping (Data?, Error?) -> Void)
 }

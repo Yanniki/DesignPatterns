@@ -9,6 +9,9 @@
 import Foundation
 import Alamofire
 
+/**
+    Alamofire implementation of the Requester protocol
+ */
 class AlamofireRequester: Requester {
     func getData(from url: URL, completion: @escaping (Data?, Error?) -> Void) {
         debugPrint("making request with alamofire")
