@@ -13,6 +13,7 @@
 		0E0382FC20A8E73C00DE62B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FB20A8E73C00DE62B6 /* Assets.xcassets */; };
 		0E0382FF20A8E73C00DE62B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0382FD20A8E73C00DE62B6 /* LaunchScreen.storyboard */; };
 		0E03830A20A8E73D00DE62B6 /* Design_PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */; };
+		0E723B6620F252EA000BD563 /* CommonTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */; };
 		0E85FECE20EFE10E002816F1 /* YannikiXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FECD20EFE10E002816F1 /* YannikiXMLParser.swift */; };
 		0E85FEE220EFF24A002816F1 /* XMLReferencingEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */; };
 		0E85FEE320EFF24A002816F1 /* EncodingErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85FED620EFF249002816F1 /* EncodingErrorExtension.swift */; };
@@ -63,6 +64,7 @@
 		0E03830520A8E73D00DE62B6 /* Design PatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Design PatternsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E03830920A8E73D00DE62B6 /* Design_PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design_PatternsTests.swift; sourceTree = "<group>"; };
 		0E03830B20A8E73D00DE62B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypeAliases.swift; sourceTree = "<group>"; };
 		0E85FECD20EFE10E002816F1 /* YannikiXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YannikiXMLParser.swift; sourceTree = "<group>"; };
 		0E85FECF20EFE657002816F1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		0E85FED520EFF249002816F1 /* XMLReferencingEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLReferencingEncoder.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		0E0382F320A8E73900DE62B6 /* Design Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				0E723B6420F252D3000BD563 /* Common */,
 				0EE9722F20BB61C0005E5B5C /* Strategy Pattern */,
 			);
 			path = "Design Patterns";
@@ -166,6 +169,14 @@
 				0E03830020A8E73C00DE62B6 /* Info.plist */,
 			);
 			path = "Xcode Stuff";
+			sourceTree = "<group>";
+		};
+		0E723B6420F252D3000BD563 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0E723B6520F252EA000BD563 /* CommonTypeAliases.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		0E85FED220EFF21D002816F1 /* 3rd Party */ = {
@@ -454,6 +465,7 @@
 				0EE1CB2620EAD4DD00E51ECF /* Storage.swift in Sources */,
 				0E85FEED20EFF24A002816F1 /* XMLDecoder.swift in Sources */,
 				0E85FEE520EFF24A002816F1 /* XMLEncodingStorage.swift in Sources */,
+				0E723B6620F252EA000BD563 /* CommonTypeAliases.swift in Sources */,
 				0EB26D2920EEB301003AD1DE /* TestObject.swift in Sources */,
 				0E0382F720A8E73900DE62B6 /* MainViewController.swift in Sources */,
 				0EB26D3020EEB848003AD1DE /* DesignPattern.swift in Sources */,

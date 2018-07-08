@@ -11,6 +11,13 @@ import UIKit
 fileprivate enum TestCase: Int {
     case json, xml
     
+    var title: String {
+        switch self {
+        case .json: return "JSON"
+        case .xml: return "XML"
+        }
+    }
+    
     var url: URL? {
         switch self {
         case .json: return URL(string: "https://gist.githubusercontent.com/Yanniki/e09c6202ffe740c453ea99ffd4ac7c89/raw/79aa398a17a81bb5ab9e16626b7d213c72cd2864/test.json")
@@ -47,7 +54,12 @@ class StrategyPatternViewController: UIViewController {
             return
         }
         
-        handler.performStrategyPatternTest(with: url, parser: buildParsingStrategy(for: testCase))
+        titleLabel.isHidden = true
+        
+        handler.performStrategyPatternTest(with: url, parser: buildParsingStrategy(for: testCase), completion: { [weak self] success in
+            self?.titleLabel.isHidden = false
+            self?.titleLabel.text = success ? "Succeeded to fetch test object for \(testCase.title) request type" : "Something went wrong, please try again"
+        })
     }
     
     fileprivate func buildParsingStrategy(for testCase: TestCase) -> Parser {
